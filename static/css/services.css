@@ -1,0 +1,117 @@
+.sample{
+	width: 110%;
+	height: 473px;
+	margin-left: 0;
+	margin-top: 0px;
+	color:white;
+	background-color: black;
+	padding-right: 80px;
+
+}
+
+h1{
+    color:white;
+}
+
+.nav {
+
+    overflow: hidden;
+}
+.nav ul {
+    list-style-type: none;
+
+}
+.nav ul li a {
+    display: block;
+    color: white;
+    text-align: right;
+    margin-right:30px;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav ul li a i {
+    margin-right: 8px;
+    color: #FFD700; /* Gold color */
+}
+	
+
+	/*border-style: solid;*/
+	/*border-width: 45px;*/
+
+.text{
+	/*text-align: center;*/
+	float: right;
+	margin-right: 240px;
+	margin-top: 165px;
+}
+
+img{
+	background-position: fixed;
+
+}
+
+
+
+
+
+body{
+    position: absolute;
+	height: 1600px;
+	overflow-y: scroll;	
+	
+	/*text-align: right;*/
+	font-size: 25px;
+	font-family: verdana;
+	/*font-weight: bold;*/
+
+	/*padding-right: 80px;*/
+
+
+	
+}	
+
+
+
+.para{
+	color: purple;
+	margin-bottom: 100%;
+	font-size: 18px;
+	text-align: center;
+	font-family: sans-serif;
+	line-height: 0.6;
+	margin-top: 95px;
+}
+
+
+p{
+	color: black;
+	font-family: verdana
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 2.0;
+	margin-top: 70px;
+	margin-left:100px;
+	margin-right: 100px;
+
+}
+
+.first h3{
+	margin-top: 80px;
+	color: black;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	font-size: 18px;
+	font-family: sans;
+	text-align: center;
+	width:750px;
+	height: 65px;
+	padding-top: 35px;
+	line-height: 1.6;
+	align-items: center;
+	margin-left: 400px;	
+
+
+}
+
+

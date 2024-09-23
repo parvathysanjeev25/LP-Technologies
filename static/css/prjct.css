@@ -1,0 +1,185 @@
+*{
+	margin: 0;
+	padding:0px;
+	font-family: sans-serif;
+}
+
+
+.basics{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("{% static 'images/prjctpic.jpg' %}");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+
+
+
+}
+.navbar{
+	width: 100%;
+	margin: auto;
+	padding-bottom: -20px;
+	padding-top: 25px;
+	background-color: white;
+	position: fixed;
+	z-index: 2000;
+
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0 20px;
+    text-align: center;
+}
+
+
+.navbar ul li{
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+	height: 50px;
+
+}
+ul {
+	list-style-type: none;
+	margin:0 20px;
+	text-align: center;
+
+}
+
+
+.navbar ul li a{
+	text-decoration: none;
+	color:black;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	font-family: timesnewroman;
+	font-size: 20px;
+	font-weight: bold;
+
+
+}
+
+.navbar ul li::after{
+	content: "";
+	height: 3px;
+	width: 0;
+	background:#009688;
+	position: absolute;
+	left: 0;
+	bottom: 15px;
+	transition:0.5s;
+	background-color: skyblue;
+
+
+}
+
+
+.navbar ul li:hover::after{
+	width: 100%;
+
+
+}
+
+.content{
+	width: 100%;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	text-align:center;
+	color: #fff;
+}
+.content h1{
+	font-size: 40px;
+	margin-top: 80px;
+}
+
+.content p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+
+
+}
+
+
+input{
+	border-radius: 25px;
+	width: 10%;
+	height: 25px;
+
+}
+.content{
+	/*font-size: 1.2em;*/
+	text-align: center;
+	padding-top: 10%;
+}
+h2{
+	color:#517aae;
+	font-family: gill sans;
+	text-align: left;
+
+	
+
+}
+
+body{
+	overflow-y: scroll;
+	height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(231, 231, 231);
+
+}
+h1{
+	font-size: 18px;
+	text-align: center;
+	animation: fadeInScaleUp 2s ease-in-out;
+}
+
+
+@keyframes fadeInScaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

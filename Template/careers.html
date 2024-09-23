@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/careers.css' %}">
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li><a href="home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+    </ul>
+</div>
+	<div class="images">
+		<img src="{% static 'images/career.jpg' %}">
+	</div>
+	<div class="career">
+		<h1>Leadership For A New Generation</h1>
+		<p>our success is fueled by a dedicated team of passionate individuals. We believe in the potential of our employees and empower them to harness their talents, push boundaries, and unleash their true capabilities. Together, we achieve remarkable accomplishments driven by our collective passion and unwavering commitment.</p>
+		<h2>Current Opening</h2>
+	</div>
+	<div class="career1">
+		
+		<ul>
+			<h1>PHP Developer (3 Openings)</h1>
+			<li>Having 3+ years of experience in PHP and Laravel.</li>
+			<li>Proven software development experience in PHP</li>
+			<li>Demonstrable knowledge of web technologies including HTML, CSS, Javascript, AJAX etc.</li>
+			<li>Good knowledge of SQL and related databases, with a preference for those with MySQL experience.</li>
+		</ul>
+
+		<ul>
+			<h1>Android Developer (2 Openings)</h1>
+			<li>Should be very strong in Core Java. Knowledge of REST, JSON</li>
+			<li>Knowledge of MVVM / MVC preferred</li>
+			<li>Knowledge of SQLite database.</li>
+			<li>and on experience in Gradle, 3rd party libraries and Android 11</li>
+			<li>Understanding of full mobile development cycle</li>
+			<li>Strong logical & analytical skills.</li>
+		</ul>
+
+		<ul>
+			<h1>Project Manager (1 Openings)</h1>
+			<li>Bachelor’s degree in Computer Science or Engineering</li>
+			<li>Experience in MySQL, HTML, PHP, Bootstrap, JQuery and JavaScript</li>
+			<li>Minimum 10-14 years of overall experience in Project and People Management</li>
+			<li>Ability to multitask</li>
+			<li>Excellent leadership abilities</li>
+		</ul>
+
+		<ul>
+			<h1>ETL Tester (2 Openings)</h1>
+			<li>4 – 6 Yrs. experience in QE ETL Test Automation</li>
+			<li>Strong knowledge on SQL queries, stored procedures and experience of doing backend testing</li>
+			<li>Comfortable working independently, leading a team or as part of a team</li>
+			<li>Good experience of working in all phase of Test Cycle (Test Design, Test Execution, Defect management & reporting)</li>
+			<li>Knowledge on RPA automation tools</li>
+			<li>Experience in testing Salesforce & Vlocity applications</li>
+			<li>Experience in Java or C# coding</li>
+		</ul>
+	</div>
+	<div>
+		<button class="open-button" onclick="ApplyNow()">Apply Now</button>
+		<div class="form-popup" id="myForm">
+		<form method="POST" class="form-container">
+			{% csrf_token %}
+		<label for="text"></label>
+    	<input type="text" placeholder="Name" name="Name" required>
+
+    	<label for="phone"></label>
+    	<input type="tel" placeholder="Contact Number" name="phone" required>
+
+    	<label for="email"></label>
+    	<input type="email" placeholder="Email" name="email">
+
+    	<label for="text"></label>
+    	<input type="text" placeholder="Role" name="role">
+
+    	<button type="submit" class="btn">Apply Now</button>
+    	<button type="button" class="close-btn" onclick="closeForm()">&times;</button>
+
+  		</form>
+
+			{% if messages %}
+        <script>
+            {% for message in messages %}
+                alert("{{ message }}");
+            {% endfor %}
+        </script>
+    {% endif %}
+</div>
+
+	</div>
+<script>
+function ApplyNow() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+
+
+</script>
+
+
+</body>
+</html>
